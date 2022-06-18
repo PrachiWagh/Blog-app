@@ -27,6 +27,24 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 
+@CrossOrigin(
+  // Access-Control-Allow-Origin
+  origins = { "*" },
+  
+  // Alternative to origins that supports more flexible originpatterns. 
+  // Please, see CorsConfiguration.setAllowedOriginPatterns(List)for details.
+  // originPatterns = { "" },   
+  
+  // Access-Control-Allow-Credentials
+  allowCredentials = "false",
+  
+  // Access-Control-Allow-Headers
+  allowedHeaders = { "*" },
+  
+  // Access-Control-Expose-Headers
+  exposedHeaders = { "*" }
+  
+)
 @RestController
 @RequestMapping("/blogs")
 public class PostController {
