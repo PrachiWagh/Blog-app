@@ -29,7 +29,7 @@ public interface PostRepository extends JpaRepository<PostEntity, Long> {
   
   @Query(value = " Select * from posts"
       + " where match( title,body,created_by )"
-      + " against((?1) in natural language mode);",
+      + " against((?1));",
       nativeQuery = true)
   Collection<PostResponseDto> searchPosts(String searchText);
 

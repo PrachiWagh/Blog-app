@@ -1,0 +1,15 @@
+.container{
+    padding-top: 200px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    height: 60px;
+}
+
+.navFont{
+    color: black;
+}
+
+
+.searchButton{
+    width: 20px;
+}

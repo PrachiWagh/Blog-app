@@ -1,0 +1,12 @@
+.createBlogDiv{
+    margin-top: -200px;
+    left: 45%;
+    margin-left: -50px;
+    top: 30%;
+    width: 500px;
+    height: 50px;
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 60%;
+    left: 38%;
+}
